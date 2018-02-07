@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Gallery</title>
+</head>
+<style>
+    body{
+        background-repeat: no-repeat;
+        background-size: 95%
+    }
+    h1{
+        font-family: "Comic Sans MS";
+        font-size: 40px;
+    }
+    .mySlides{
+        padding-top: 50px;
+        padding-left: 50px;
+        position: absolute;
+    }
+    .button{
+        padding-top: 50px;
+        padding-left: 580px;
+        position: absolute;
+    }
+    .sample{
+        border: 10px ridge magenta;
+        border-radius: 5px;
+        height: 500px;
+        width: 800px;
+        margin-left: 270px;
+    }
+</style>
+<body background="style/l.png" bgcolor="#ffdab9">
+<center><h1>My Gallery</h1></center>
+<div class="sample">
+    <img src="style/church.jpg" class="mySlides" height="400" width="700" title="Manila Cathedral">
+    <img src="style/fort.jpg" class="mySlides" height="400" width="700" title="Fort Santiago">
+    <img src="style/casa.jpg" class="mySlides" height="400" width="700" title="Casa Manila">
+    <img src="style/gun.jpg" class="mySlides" height="400" width="700" title="Guns at the Ready, Intramuros">
+    <img src="style/shrine.jpg" class="mySlides" height="400" width="700" title="Aguinaldo Shrine">
+    <img src="style/c2.jpg" class="mySlides" height="400" width="700" title="Barasoain Church">
+    <img src="style/rocks.jpg" class="mySlides" height="400" width="700" title="Big Rocks in Sitio Wawa">
+    <img src="style/dam.jpg" class="mySlides" height="400" width="700" title="Wawa Dam">
+    <img src="style/river.jpg" class="mySlides" height="400" width="700" title="River at Wawa Dam">
+    <img src="style/taal.jpg" class="mySlides" height="400" width="700" title="Taal Volcano View">
+    <img src="style/park.jpg" class="mySlides" height="400" width="700" title="People's Park in the Sky, Tagaytay">
+    <img src="style/view.jpg" class="mySlides" height="400" width="700" title="Overlooking View of Antipolo">
+</div>
+<a href="Diary.html"><img src="style/bb.png" height="60" width="130" class="button"></a>
+<script>
+    var myIndex=0;
+    carousel();
+
+    function carousel(argument) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i=0; i<x.length; i++){
+            x[i].style.display="none";
+        }
+        myIndex++;
+        if (myIndex>x.length) {myIndex=1}
+            x[myIndex-1].style.display="block";
+        setTimeout(carousel, 3000);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Travel Diary</title>
+</head>
+<style>
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    nav {
+        display: inline-block;
+        float: right;
+        padding-left: 25px;
+        position: absolute;
+    }
+    nav a{
+        color: purple;
+        font-family: "Rockwell";
+        padding-right: 10px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    nav a:hover{
+        color: maroon;
+    }
+    .border{
+        width: 300px;
+        height: 20px;
+        position: relative;
+        float: right;
+        border: 3px solid blue ;
+        border-radius: 10px;
+        margin-top: 80px;
+        margin-right: 20px;
+    }
+    .mylogo{
+        border-radius: 50%;
+        float: left;
+        margin: 5px;
+        margin-left: 10px;
+    }
+    .head{
+        border: 3px solid red;
+        border-radius: 10px;
+        height: 120px;
+    }
+    .banner{
+        border: 3px solid orange;
+        border-radius: 8px;
+        height: 250px;
+        margin-top: 125px;
+    }
+    section{
+        border: 3px solid green;
+        border-radius: 8px;
+        height: 300px;
+        margin-top: 3px;
+    }
+    aside{
+        border: 3px dashed blue;
+        border-radius: 8px;
+        height: 285px;
+        width: 340px;
+        float: right;
+        margin: 5px;
+    }
+    article{
+        border: 3px dashed violet;
+        border-radius: 8px;
+        float: left;
+        height: 285px;
+        margin: 5px;
+        width: 950px;
+        position: absolute;
+    }
+    .name{
+        font-family: "Mistral";
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-top: 80px;
+        position: absolute;
+        left: 12px;
+    }
+    .ban1{
+        position: absolute;
+        left: 325px;
+        top: 142px;
+        border-radius: 5px;
+    }
+    .ban2{
+        position: absolute;
+        left: 20px;
+        top: 142px;
+        border-radius: 5px;
+    }
+    .ban3{
+        position: absolute;
+        top: 142px;
+        right: 20px;
+        border-radius: 5px;
+    }
+    .c1{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        top: 150px;
+        padding-left: 40px;
+        position: absolute;
+    }
+    .c2{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        top: 350px;
+        padding-left: 320px;
+        position: absolute;
+    }
+    .c3{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        top: 140px;
+        padding-left: 1040px;
+        position: relative;
+    }
+    .c1:hover, .c2:hover, .c3:hover{
+        color: gold;
+    }
+    h1{
+        padding-left: 5px;
+        margin-top: 5px;
+        font-family: "Apples Script Demo";
+        font-size: 42px;
+    }
+    .about{
+        color: purple;
+        left: 80px;
+        top: -10px;
+        position: relative;
+        font-family: "Comic Sans MS";
+        font-size: 20px;
+    }
+    .author{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: -20px;
+    }
+    .caption{
+        padding-left: 15px;
+        padding-top: 115px;
+        position: absolute;
+        font-family: "Pristina";
+        font-size: 20px;
+    }
+    .fb{
+        border-radius: 3px;
+        margin-top: 170px;
+        margin-left: 90px;
+        position: absolute;
+    }
+    .twitter{
+        border-radius: 3px;
+        margin-top: 167px;
+        margin-left: 200px;
+        position: absolute;
+    }
+    .story{
+        font-size: 17px;
+        font-family: "Stylus BT";
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -15px;
+        position: absolute;
+    }
+    footer{
+        border: 3px solid black;
+        border-radius: 8px;
+        height: 180px;
+        margin-top: 570px;
+    }
+    .last{
+        padding-left: 5px;
+        padding-top: 5px;
+        border-radius: 5px;
+        position: absolute;
+    }
+    .some{
+        border: 3px dashed maroon;
+        border-radius: 5px;
+        height: 165px;
+        width: 480px;
+        margin-left: 280px;
+        margin-top: 5px;
+    }
+    .t1{
+        font-family: "Rolande";
+        font-size: 30px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+    .t2{
+        font-family: "Rolande";
+        font-size: 30px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+    .girls{
+        float: left;
+        margin-left: 20px;
+        margin-top: -40px;
+    }
+    .boys{
+        float: right;
+        padding-right: 50px;
+        margin-top: -40px;
+    }
+    .pics{
+        border: 3px dashed magenta;
+        border-radius: 5px;
+        height: 165px;
+        width: 545px;
+        margin-left: 770px;
+        margin-top: -170px;
+    }
+    .photo{
+        padding: 20px 0 20px 25px;
+        margin-top: -130px;
+    }
+</style>
+<body background="style/l.png" bgcolor=#ffdab9>
+<header>
+<div class="head">
+    <img class="mylogo" src="style/jeep.jpg" alt="my-logo" width="105" height="105">
+    <i><h3 class="name">My Escapade</h3></i>
+    <div class="border">
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="maps.html">MAPS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about.html">ABOUT</a>
+    </nav>
+</div>
+<div class="banner">
+<img class="ban1" src="style/c9.jpg" alt="cloud9" width="700" height="245"><a href="c9.html" class="c2">Cloud9 Sports and Leisure Club at Antipolo</a>
+<img class="ban2" src="style/dam.jpg" alt="wawa-dam" width="300" height="245"><a href="wawa.html" class="c1">Wawa Dam at Montalban, Rizal</a>
+<img class="ban3" src="style/taal.jpg" alt="taal-volcano" width="300" height="245"><a href="field.html" class="c3">Taal Volcano View at Tagaytay</a>
+</div>
+<section>
+    <aside>
+    <h2 class="about">INTRODUCTION</h2>
+        <img class="author" src="style/me.jpeg" alt="author" height="130" width="135">
+        <span class="caption">Nature lover. Traveller at heart. God's Princess.<br> Get to know me more by following me in: </span>
+        <img class="fb" src="style/fb.png" alt="facebook" width="45" height="45" title="http://facebook.com/nancy.malgapo">
+        <img class="twitter" src="style/tweet.png" alt="twitter" width="50" height="50" title="http://twitter.com/nansheemalgapo">
+    </aside>
+    <article>
+        <i><h1>My Story</h1></i>
+        <p class="story">I believe every traveller has their own brief history why they want to travel. As for me, I travel simply because I have it in my heart. Travelling satisfies my cravings for nature that is barely around Metro Manila. It also makes me wonder a lot, for there are also some places that has a great historical background.<br><br>Mostly of my trips were just a few kilometers away from the big city, and some were just around the corner. Whenever I'm on a trip, I always make sure I have my phone with me 'cause I'm gonna take a lot of pictures of the trees, the views and features of the place.<br><br>Travelling was not just about sightseeing. For me, it is a short break and a memorable escape from all the hustles and bustles. For me, it is a way of pampering myself by satisfying my wanderlust with some friends or even alone.</p>
+    </article>
+</section>
+</header>
+<footer>
+    <img class="last" src="style/last.jpg" alt="last-tweet" height="170" width="270" title="My Last Tweet">
+    <div class="some"><center><strong><h4 class="t1">MY FRIENDS</center></strong></h4>
+    <ul class="girls">
+        <li>Gladys Aira Antonio</li>
+        <li>Daiserie Toledo</li>
+        <li>Ceejay Cayona</li>
+        <li>Harlene Mae Bondad</li>
+        <li>Katrina Mendez</li>
+    </ul>
+    <ul class="boys">
+        <li>Mark Spencer Baleta</li>
+        <li>Romeo Gatcheco III</li>
+        <li>Ronel Galon</li>
+        <li>John Daniel Moya</li>
+        <li>Neil Sangalang</li>
+    </ul>
+    </div>
+    <div class="pics">
+        <center><strong><h4 class="t2">MY PICTURES</h4></strong></center>
+        <img src="style/lights.jpg" height="120" width="100" class="photo">
+        <img src="style/peace.jpg" height="120" width="100" class="photo">
+        <img src="style/horse.jpg" height="120" width="100" class="photo">
+        <img src="style/white.jpg" height="120" width="100" class="photo">
+    </div>
+</footer>
+</body>
+</html>
